@@ -57,26 +57,26 @@ ___
 
 1. Get the tutorial material
 
-        cp -r /cta/users/mayoubi/peak_calling_tutorial peak_calling_tutorial
+       	cp -r /cta/users/mayoubi/peak_calling_tutorial peak_calling_tutorial
 
 2. copy a slurm_example.sh script
 	
-	cp /cta/share/slurm_example.sh
+       cp /cta/share/slurm_example.sh
 
 3. inside your slurm_example.sh loard your module and add the macs2 command for the datafiles
 
-	nano slurm_example.sh
-	module load macs2-2.2.6
-	macs2 callpeak -t Nanog_Rep1.bam -c control.bam -f BAM -g 1.3e+8 -n Nanog-rep1 --outdir macs2
+        nano slurm_example.sh
+        module load macs2-2.2.6
+        macs2 callpeak -t Nanog_Rep1.bam -c control.bam -f BAM -g 1.3e+8 -n Nanog-rep1 --outdir macs2
 4. dispatch the slurm script
 	
-	sbatch slurm_example.sh
+        sbatch slurm_example.sh
 
 5.  if the code return with no errors do the same for the res of the data files
 
-	macs2 callpeak -t Nanog_Rep2.bam -c control.bam -f BAM -g 1.3e+8 -n Nanog-rep1 --outdir macs2
-	macs2 callpeak -t Nanog_Rep2.bam -c control.bam -f BAM -g 1.3e+8 -n Nanog-rep1 --outdir macs2
-	macs2 callpeak -t Nanog_Rep2.bam -c control.bam -f BAM -g 1.3e+8 -n Nanog-rep1 --outdir macs2
+        macs2 callpeak -t Nanog_Rep2.bam -c control.bam -f BAM -g 1.3e+8 -n Nanog-rep1 --outdir macs2
+        macs2 callpeak -t Nanog_Rep2.bam -c control.bam -f BAM -g 1.3e+8 -n Nanog-rep1 --outdir macs2
+        macs2 callpeak -t Nanog_Rep2.bam -c control.bam -f BAM -g 1.3e+8 -n Nanog-rep1 --outdir macs2
 	
 
 
@@ -167,5 +167,5 @@ ___
 
 ### __Other useful links__
 
-1. https://github.com/taoliu/MACS
+1. MACS2: https://github.com/taoliu/MACS
 ___
