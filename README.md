@@ -57,7 +57,7 @@ ___
 
 1. Get the tutorial material
 
-       	cp -r /cta/users/mayoubi/peak_calling_tutorial peak_calling_tutorial
+       cp -r /cta/users/mayoubi/peak_calling_tutorial peak_calling_tutorial
 
 2. copy a slurm_example.sh script
 	
@@ -67,7 +67,7 @@ ___
 
         nano slurm_example.sh
         module load macs2-2.2.6
-        macs2 callpeak -t Nanog_Rep1.bam -c control.bam -f BAM -g 1.3e+8 -n Nanog-rep1 --outdir macs2
+        macs2 callpeak -t Nanog_Rep1.bam -c control.bam -f BAM -g 5.3e+8 -n Nanog-rep1 --outdir macs2
 4. dispatch the slurm script
 	
         sbatch slurm_example.sh
