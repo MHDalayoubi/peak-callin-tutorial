@@ -56,11 +56,11 @@ ___
 
 2. go to the tutorial folder
 
-	cd peak_calling_tutorial 
+       cd peak_calling_tutorial 
 
 3. copy a slurm_example.sh script
 	
-	cp /cta/share/slurm_example.sh .
+       cp /cta/share/slurm_example.sh .
 
 4. inside your slurm_example.sh loard your module and add the macs2 command for the datafiles
 
