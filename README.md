@@ -64,13 +64,13 @@ ___
 
 4. inside your slurm_example.sh loard your module and add the macs2 command for the datafiles
 
-	nano slurm_example.sh
-	module load macs2-2.2.6
-	macs2 callpeak -t POU5F1_rep1.bam -c control.bam -f AUTO -g 2.7e9  -n Pou5f1_one_replicate --outdir macs2
+       nano slurm_example.sh
+       module load macs2-2.2.6
+       macs2 callpeak -t POU5F1_rep1.bam -c control.bam -f AUTO -g 2.7e9  -n Pou5f1_one_replicate --outdir macs2
 
 5. dispatch the slurm script
 	
-	sbatch slurm_example.sh
+       sbatch slurm_example.sh
 
 6.  if the code return with no errors check out the slurm output and take note of the number of peaks found
 
